@@ -1,18 +1,28 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 
 import Link from "next/link";
+import Image from "next/image";
 
 // links
 import links from "@/constants";
 
+// assets
+import menu from "/public/menu.png";
+import close from "/public/close.png";
+
 const Navbar = () => {
+  const [active, setActive] = useState("");
+  const [toggle, setToggle] = useState(false);
+
   return (
     <div className="h-[100px] flex justify-between items-center">
       <Link href={"/"} className="font-bold text-xl">
         SimpleBlog
       </Link>
-      <div className="flex items-center gap-5">
+
+      {/* Desktop Navbar */}
+      <div className="xs:hidden md:flex items-center justify-between gap-12">
         {links.map((link) => (
           <Link key={link.id} href={link.url}>
             {link.title}
@@ -26,6 +36,37 @@ const Navbar = () => {
         >
           Logout
         </button>
+      </div>
+
+      {/* Mobile Navbar */}
+      <div className="md:hidden xs:relative text-[#222]">
+        <Image
+          src={!toggle ? menu : close}
+          className="fixed top-4 right-7 object-contain cursor-pointer "
+          width={35}
+          height={35}
+          alt="nav_icon"
+          onClick={() => setToggle(!toggle)}
+        />
+        <div
+          className={`${
+            !toggle ? "hidden" : "flex"
+          } flex-col justify-center gap-1 mt-[17rem] mr-[-2.6rem] py-2 px-4 p  bg-white`}
+        >
+          {links.map((link) => (
+            <Link key={link.id} href={link.url}>
+              {link.title}
+            </Link>
+          ))}
+
+          {/* Logout button */}
+          <button
+            className="px-2 py-1 border-none bg-[#53c28b] hover:bg-[#53c26b] rounded-md text-[#121212] mt-2 mb-1"
+            onClick={() => console.log("Logged Out")}
+          >
+            Logout
+          </button>
+        </div>
       </div>
     </div>
   );

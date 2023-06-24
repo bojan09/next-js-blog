@@ -5,7 +5,7 @@ import Hero_img from "public/hero.png";
 
 export default function Home() {
   return (
-    <div className="flex items-center gap-28">
+    <div className="md:flex items-center gap-28">
       {/*Homepage - Text*/}
       <div className="flex-1 flex flex-col gap-12">
         <h1 className="text-[72px] bg-gradient-to-br from-[#194c33] to-[#bbb] bg-clip-text text-transparent font-bold">
