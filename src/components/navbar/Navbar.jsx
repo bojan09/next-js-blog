@@ -21,7 +21,7 @@ const Navbar = () => {
 
         {/* Logout button */}
         <button
-          className="px-2 py-1 border-none bg-[#53c28b] hover:bg-[#53c15b] rounded-md text-[#121212]"
+          className="px-2 py-1 border-none bg-[#53c28b] hover:bg-[#53c26b] rounded-md text-[#121212]"
           onClick={() => console.log("Logged Out")}
         >
           Logout
