@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <div className="h-[100px] flex justify-between items-center">
-      <Link href={"/"} className="font-bold text-xl">
+      <Link href={"/"} className="font-bold text-2xl">
         SimpleBlog
       </Link>
 
@@ -42,9 +42,9 @@ const Navbar = () => {
       <div className="md:hidden xs:relative text-[#222]">
         <Image
           src={!toggle ? menu : close}
-          className="fixed top-4 right-7 object-contain cursor-pointer "
-          width={35}
-          height={35}
+          className="fixed top-6 right-7 object-contain cursor-pointer"
+          width={45}
+          height={45}
           alt="nav_icon"
           onClick={() => setToggle(!toggle)}
         />
