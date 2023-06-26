@@ -3,6 +3,9 @@ import Image from "next/image";
 // assets
 import Hero_img from "public/hero.png";
 
+// components
+import { Button } from "@/components";
+
 export default function Home() {
   return (
     <div className="md:flex items-center gap-28">
@@ -15,9 +18,7 @@ export default function Home() {
           Turning your Idea into Reality. We bring together the teams from the
           globalt tech industry.
         </p>
-        <button className="text-lg  px-3 py-2 border-none bg-[#53c28b] hover:bg-[#53c26b] rounded-md text-[#121212] w-[max-content]">
-          See our works
-        </button>
+        <Button url="/" text="See our works" />
       </div>
 
       {/*Homepage - Image*/}
