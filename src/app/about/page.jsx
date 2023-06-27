@@ -34,7 +34,7 @@ const About = () => {
       <div className="flex gap-28 p-2 mt-5 text-[#f3f3f3]">
         <div>
           <h1 className="text-xl md:text-3xl font-bold my-3">Who we are?</h1>
-          <p className="text-sm md:text-lg">
+          <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem sunt
             magnam enim, voluptas ut unde consectetur, laborum sed ullam officia
             voluptate. <br /> <br /> <br />
@@ -46,7 +46,7 @@ const About = () => {
         </div>
         <div>
           <h1 className="text-xl md:text-3xl font-bold my-3">What we do?</h1>
-          <p className="text-sm md:text-lg mb-5">
+          <p className="mb-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
             quae dolor, optio voluptatibus magnam iure esse tempora beatae, a
             suscipit eos. Animi quibusdam cum omnis officiis voluptatum quo ea
