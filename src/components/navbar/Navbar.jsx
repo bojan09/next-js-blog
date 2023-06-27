@@ -11,6 +11,9 @@ import links from "@/constants";
 import menu from "/public/menu.png";
 import close from "/public/close.png";
 
+// components
+import { Button } from "@/components";
+
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
@@ -30,12 +33,7 @@ const Navbar = () => {
         ))}
 
         {/* Logout button */}
-        <button
-          className="px-2 py-1 border-none bg-[#53c28b] hover:bg-[#53c26b] rounded-md text-[#121212]"
-          onClick={() => console.log("Logged Out")}
-        >
-          Logout
-        </button>
+        <Button url="/logout" text="Logout" />
       </div>
 
       {/* Mobile Navbar */}

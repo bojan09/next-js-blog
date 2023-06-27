@@ -11,24 +11,33 @@ const About = () => {
   return (
     <div>
       {/*Image*/}
-      <div>
-        <Image src={about_img} alt="about_img" fill={true} className="w-24" />
+      <div className="relative w-full h-[300px]">
+        <Image
+          src={about_img}
+          alt="about_img"
+          fill={true}
+          className="object-cover grayscale"
+        />
 
         {/*Image Text*/}
-        <div>
-          <h1>Digital Storytellers</h1>
-          <h2>Handcrafting award winning digital experiences</h2>
+        <div className="absolute bottom-5 left-5 bg-[#53d28b] p-2 text-white rounded-md">
+          <h1 className="text-xl md:text-3xl font-bold">
+            Digital Storytellers
+          </h1>
+          <h2 className="text-lg md:text-2xl">
+            Handcrafting award winning digital experiences
+          </h2>
         </div>
       </div>
 
       {/*Text*/}
-      <div>
+      <div className="flex gap-28 p-2 mt-5 text-[#f3f3f3]">
         <div>
-          <h1>Who we are?</h1>
-          <p>
+          <h1 className="text-xl md:text-3xl font-bold my-3">Who we are?</h1>
+          <p className="text-sm md:text-lg">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem sunt
             magnam enim, voluptas ut unde consectetur, laborum sed ullam officia
-            voluptate. <br />
+            voluptate. <br /> <br /> <br />
             Officiis facere ad neque distinctio recusandae esse eos omnis
             suscipit quibusdam? Maiores obcaecati incidunt eveniet esse expedita
             necessitatibus laborum recusandae consequuntur quam, veniam atque
@@ -36,8 +45,8 @@ const About = () => {
           </p>
         </div>
         <div>
-          <h1>What we do?</h1>
-          <p>
+          <h1 className="text-xl md:text-3xl font-bold my-3">What we do?</h1>
+          <p className="text-sm md:text-lg mb-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
             quae dolor, optio voluptatibus magnam iure esse tempora beatae, a
             suscipit eos. Animi quibusdam cum omnis officiis voluptatum quo ea
