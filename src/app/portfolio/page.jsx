@@ -1,7 +1,61 @@
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+
+// assets
+import illustration_img from "../../../public/illustration.png";
+import websites_img from "../../../public/websites.jpg";
+import application_img from "../../../public/apps.jpg";
 
 const Portfolio = () => {
-  return <div>Portfolio</div>;
+  return (
+    <div className="flex gap-10">
+      {/* Illustrations */}
+      <div className="relative border-gray-400 border-2 rounded-md w-[260px] h-[400px] hover:text-[#53c26b] transition-all 1s ease-in-out">
+        <Link href="/portfolio/illustrations">
+          <Image
+            src={illustration_img}
+            fill={true}
+            alt="illustration_img"
+            className="grayscale hover:grayscale-0 transition-all 1s ease-in-out"
+          />
+          <span className="absolute right-3 bottom-4 text-3xl font-semibold">
+            Illustrations
+          </span>
+        </Link>
+      </div>
+
+      {/* Websites */}
+      <div className="relative border-gray-400 border-2 rounded-md w-[260px] h-[400px] hover:text-[#53c26b] transition-all 1s ease-in-out">
+        <Link href="/portfolio/websites">
+          <Image
+            src={websites_img}
+            fill={true}
+            alt="illustration_img"
+            className="grayscale hover:grayscale-0 transition-all 1s ease-in-out object-cover"
+          />
+          <span className="absolute right-3 bottom-3 text-3xl font-semibold">
+            Websites
+          </span>
+        </Link>
+      </div>
+
+      {/* Application */}
+      <div className="relative border-gray-400 border-2 rounded-md w-[260px] h-[400px] hover:text-[#53c26b] transition-all 1s ease-in-out">
+        <Link href="/portfolio/application">
+          <Image
+            src={application_img}
+            fill={true}
+            alt="illustration_img"
+            className="grayscale hover:grayscale-0 transition-all 1s ease-in-out object-cover"
+          />
+          <span className="absolute right-3 bottom-3 text-3xl font-semibold">
+            Application
+          </span>
+        </Link>
+      </div>
+    </div>
+  );
 };
 
 export default Portfolio;
