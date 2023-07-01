@@ -80,3 +80,35 @@ select {
         scroll-behavior: auto !important;
     }
 }
+
+/* Animation */
+.contact_animation {
+    object-fit: cover;
+    animation: move 3s infinite ease alternate;
+}
+
+.home_animation {
+    object-fit: contain;
+    animation: move2 3s infinite ease alternate;
+}
+
+@keyframes move {
+    from {
+        transform: translateY(-15px);
+    }
+
+    to {
+        transform: translateY(0px) scale(1.03);
+    }
+}
+
+
+@keyframes move2 {
+    from {
+        transform: translateY(-15px);
+    }
+
+    to {
+        transform: translateY(10px);
+    }
+}

@@ -26,7 +26,7 @@ export default function Home() {
         <Image
           src={Hero_img}
           alt="hero_img"
-          className="w-full md:h-[500px] object-cover xs:my-8 md:m-0"
+          className="w-full md:h-[500px] object-cover xs:my-8 md:m-0 home_animation"
         />
       </div>
     </div>
