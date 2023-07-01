@@ -14,7 +14,7 @@ const Category = ({ params }) => {
       {/*Category Item*/}
       <div className="category_item">
         {/*Category Item - Content*/}
-        <div className="flex-1 flex flex-col gap-6 justify-center items-center category_item">
+        <div className="flex-1 flex flex-col gap-6 justify-center items-center ">
           <h1 className="text-5xl">Test</h1>
           <p className="text-xl">Desc</p>
           <Button text="See more" url="#" />

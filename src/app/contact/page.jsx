@@ -16,7 +16,7 @@ const Contact = () => {
             src="/contact.png"
             alt="contact_img"
             fill={true}
-            className="object-contain contact_animation"
+            className="object-cover contact_animation"
           />
         </div>
         <div>
