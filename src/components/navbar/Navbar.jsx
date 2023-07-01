@@ -25,7 +25,7 @@ const Navbar = () => {
       </Link>
 
       {/* Desktop Navbar */}
-      <div className="xs:hidden md:flex items-center justify-between gap-12">
+      <div className="xs:hidden md:flex items-center justify-between gap-12 ">
         {links.map((link) => (
           <Link key={link.id} href={link.url}>
             {link.title}
