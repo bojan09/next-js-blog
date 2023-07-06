@@ -18,7 +18,7 @@ export default function Home() {
           Turning your Idea into Reality. We bring together the teams from the
           globalt tech industry.
         </p>
-        <Button url="/" text="See our works" />
+        <Button url="/blog" text="See our works" />
       </div>
 
       {/*Homepage - Image*/}

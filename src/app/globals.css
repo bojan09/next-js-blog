@@ -126,3 +126,18 @@ select {
     flex-direction: row-reverse;
 
 }
+
+/* Dark/Light Theme */
+.light {
+    background-color: #fff;
+    color: #111;
+}
+
+.dark {
+    background-color: #111;
+    color: #fff;
+}
+
+.theme {
+    transition: 1s all ease;
+}

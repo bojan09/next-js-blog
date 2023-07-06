@@ -13,6 +13,7 @@ import close from "/public/close.png";
 
 // components
 import { Button } from "@/components";
+import { DarkModeToggle } from "@/components";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -26,6 +27,7 @@ const Navbar = () => {
 
       {/* Desktop Navbar */}
       <div className="xs:hidden md:flex items-center justify-between gap-12 ">
+        <DarkModeToggle />
         {links.map((link) => (
           <Link key={link.id} href={link.url}>
             {link.title}

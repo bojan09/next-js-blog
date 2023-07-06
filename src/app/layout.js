@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 // components
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
+import { ThemeProvider } from "./context/ThemeContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,12 +19,15 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body
-        className={`inter.className max-w-[1366px] min-h-screen mx-auto md:px-[60px] px-[40px] flex flex-col justify-between`}
-      >
-        <Navbar />
-        {children}
-        <Footer />
+      <body className={`inter.className `}>
+        <ThemeProvider>
+          {/* Container */}
+          <div className="max-w-[1366px] min-h-screen mx-auto md:px-[60px] px-[40px] flex flex-col justify-between">
+            <Navbar />
+            {children}
+            <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );
