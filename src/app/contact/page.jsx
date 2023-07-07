@@ -10,8 +10,8 @@ const Contact = () => {
       <h1 className="text-xl md:text-6xl font-bold my-[4rem] text-center">
         Let's keep in touch
       </h1>
-      <div className="flex justify-evenly gap-20 my-12">
-        <div className="relative w-[400px] h-[400px]">
+      <div className="flex md:justify-evenly xs:flex-col md:flex-row md:gap-20 md:my-12">
+        <div className="relative md:w-[400px] md:h-[400px] xs:w-[225px] xs:h-[225px] xs:mx-auto xs:mb-4 md:m-0">
           <Image
             src="/contact.png"
             alt="contact_img"
@@ -20,7 +20,7 @@ const Contact = () => {
           />
         </div>
         <div>
-          <form className="flex flex-col gap-6">
+          <form className="flex flex-col gap-6 xs:mx-auto xs:mb-4 md:m-0">
             <input
               type="text"
               placeholder="Your name"
