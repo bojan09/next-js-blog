@@ -9,7 +9,7 @@ import application_img from "../../../public/apps.jpg";
 
 const Portfolio = () => {
   return (
-    <div className="flex gap-10">
+    <div className="flex md:flex-row xs:flex-col justify-center items-center gap-10 my-5">
       {/* Illustrations */}
       <div className="relative border-gray-400 border-2 rounded-md w-[260px] h-[400px] hover:text-[#53c26b] transition-all 1s ease-in-out">
         <Link href="/portfolio/illustrations">
