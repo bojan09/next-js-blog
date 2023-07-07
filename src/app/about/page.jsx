@@ -16,7 +16,7 @@ const About = () => {
           src={about_img}
           alt="about_img"
           fill={true}
-          className="object-cover grayscale"
+          className="object-cover grayscale md:rounded-none xs:rounded-sm"
         />
 
         {/*Image Text*/}
@@ -31,7 +31,7 @@ const About = () => {
       </div>
 
       {/*Text*/}
-      <div className="flex gap-28 p-2 mt-5 text-[#f3f3f3]">
+      <div className="flex md:flex-row xs:flex-col md:gap-28 xs:gap-10 p-2 mt-5 text-[#f3f3f3]">
         <div>
           <h1 className="text-xl md:text-3xl font-bold my-3">Who we are?</h1>
           <p>
@@ -61,7 +61,9 @@ const About = () => {
           </p>
 
           {/*Text Button*/}
-          <Button url="/contact" text="Contact" />
+          <div className="xs:my-5 md:m-0">
+            <Button url="/contact" text="Contact" />
+          </div>
         </div>
       </div>
     </div>
