@@ -16,7 +16,6 @@ import { Button } from "@/components";
 import { DarkModeToggle } from "@/components";
 
 const Navbar = () => {
-  const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
 
   return (
@@ -51,7 +50,7 @@ const Navbar = () => {
         <div
           className={`${
             !toggle ? "hidden" : "flex"
-          } flex-col justify-center gap-1 mt-[21rem] mr-[-1.5rem] py-2 px-4 p  bg-gradient-to-tr from-gray-50 to-gray-200 rounded-sm`}
+          } flex-col justify-center gap-1 mt-[21rem] mr-[-1.5rem] py-2 px-4 p  bg-gradient-to-tr from-gray-50 to-gray-200 rounded-sm z-10`}
         >
           <div className="my-2 mx-auto">
             <DarkModeToggle />
@@ -61,7 +60,7 @@ const Navbar = () => {
             <Link
               key={link.id}
               href={link.url}
-              onClick={() => setActive(link.title) || window.scrollTo(0, 0)}
+              onClick={() => setToggle(!toggle) && window.scrollTo(0, 0)}
             >
               {link.title}
             </Link>

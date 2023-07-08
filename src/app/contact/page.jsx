@@ -24,18 +24,18 @@ const Contact = () => {
             <input
               type="text"
               placeholder="Your name"
-              className="rounded-sm px-3 py-2 bg-[#f4f4f4]"
+              className="rounded-sm px-3 py-2 bg-[#f4f4f4] text-[#333]"
             />
             <input
               type="email"
               placeholder="Your email"
-              className="rounded-sm px-3 py-2 bg-[#f4f4f4]"
+              className="rounded-sm px-3 py-2 bg-[#f4f4f4]  text-[#333]"
             />
             <textarea
               placeholder="Send us a message"
               cols="30"
               rows="10"
-              className="rounded-sm px-3 py-3 bg-[#f4f4f4]"
+              className="rounded-sm px-3 py-3 bg-[#f4f4f4]  text-[#333]"
             ></textarea>
             <Button url="#" text="Send" />
           </form>
