@@ -16,6 +16,7 @@ const Contact = () => {
             src="/contact.png"
             alt="contact_img"
             fill={true}
+            sizes="(max-width: 768px) 100vw"
             className="object-cover contact_animation"
           />
         </div>
