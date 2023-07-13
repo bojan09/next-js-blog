@@ -1,13 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 // assets
 import illustration_img from "../../../public/illustration.png";
 import websites_img from "../../../public/websites.jpg";
 import application_img from "../../../public/apps.jpg";
 
-const Portfolio = () => {
+const Portfolio = ({ params }) => {
   return (
     <div className="flex md:flex-row xs:flex-col justify-center items-center gap-10 my-5">
       {/* Illustrations */}
@@ -16,6 +17,7 @@ const Portfolio = () => {
           <Image
             src={illustration_img}
             fill={true}
+            sizes="(max-width: 768px) 100vw"
             alt="illustration_img"
             className="grayscale hover:grayscale-0 transition-all 1s ease-in-out"
           />
@@ -31,6 +33,7 @@ const Portfolio = () => {
           <Image
             src={websites_img}
             fill={true}
+            sizes="(max-width: 768px) 100vw"
             alt="illustration_img"
             className="grayscale hover:grayscale-0 transition-all 1s ease-in-out object-cover"
           />
@@ -46,6 +49,7 @@ const Portfolio = () => {
           <Image
             src={application_img}
             fill={true}
+            sizes="(max-width: 768px) 100vw"
             alt="illustration_img"
             className="grayscale hover:grayscale-0 transition-all 1s ease-in-out object-cover"
           />
