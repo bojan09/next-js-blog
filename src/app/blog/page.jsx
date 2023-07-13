@@ -7,7 +7,7 @@ import { Button } from "@/components";
 
 async function getData() {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
-    next: { revalidate: 10 },
+    cache: "no-store",
   });
 
   if (!res.ok) {
