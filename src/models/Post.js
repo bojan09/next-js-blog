@@ -8,15 +8,15 @@ const postSchema = new Schema(
       type: String,
       required: true,
     },
-    description: {
+    desc: {
       type: String,
       required: true,
     },
-    image: {
+    img: {
       type: String,
       required: true,
     },
-    contet: {
+    content: {
       type: String,
       required: true,
     },
@@ -25,9 +25,7 @@ const postSchema = new Schema(
       required: true,
     },
   },
-  {
-    timestamps: true,
-  }
+  { timestamps: true }
 );
 
-export default mongoose.model("postModel", postSchema);
+export default mongoose.model("Post", postSchema);
