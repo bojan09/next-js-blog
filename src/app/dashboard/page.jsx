@@ -1,4 +1,5 @@
 "use client";
+import { useSession } from "next-auth/react";
 import React, { useEffect, useState } from "react";
 import useSWR from "swr";
 
@@ -26,6 +27,8 @@ const Dashboard = () => {
   // }, []);
 
   // console.log(data);
+
+  const session = useSession();
 
   const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
