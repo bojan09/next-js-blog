@@ -27,7 +27,6 @@ const Dashboard = () => {
   // }, []);
 
   // console.log(data);
-
   const session = useSession();
 
   const fetcher = (...args) => fetch(...args).then((res) => res.json());
