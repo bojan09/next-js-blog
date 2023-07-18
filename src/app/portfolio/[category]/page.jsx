@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-
+import { notFound } from "next/navigation";
 // components
 import { Button } from "@/components";
 
