@@ -19,13 +19,13 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className="h-[100px] flex justify-between items-center">
+    <div className="h-[100px] w-full flex md:justify-evenly lg:justify-between items-center">
       <Link href={"/"} className="font-bold text-2xl">
         SimpleBlog
       </Link>
 
       {/* Desktop Navbar */}
-      <div className="xs:hidden md:flex items-center justify-between gap-12 ">
+      <div className="xs:hidden md:flex items-center justify-between gap-12 ml-2">
         <DarkModeToggle />
         {links.map((link) => (
           <Link key={link.id} href={link.url}>
@@ -50,7 +50,7 @@ const Navbar = () => {
         <div
           className={`${
             !toggle ? "hidden" : "flex"
-          } flex-col justify-center gap-1 mt-[21rem] mr-[-1.5rem] py-2 px-4 p  bg-gradient-to-tr from-gray-50 to-gray-200 rounded-sm z-10`}
+          } flex-col justify-center gap-1 mt-[21rem] mr-[-1.5rem] py-2 px-4 p  bg-gradient-to-tr from-gray-600 to-gray-700 rounded-sm z-10 text-white font-semibold`}
         >
           <div className="my-2 mx-auto">
             <DarkModeToggle />
